@@ -5,8 +5,10 @@ class Grupo:
 
     def __init__(self, grupo="grupo predeterminado", asignaturas=None, estudiantes=None):
         self._grupo = grupo
-        self._asignaturas = []
-        self.listadoAlumnos = []
+        if asignaturas is None:
+           self._asignaturas = []
+        if estudiantes is None:
+           self.listadoAlumnos = []
 
     def listadoAsignaturas(self, **kwargs):
         for x in kwargs.values():

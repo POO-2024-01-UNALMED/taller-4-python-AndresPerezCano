@@ -15,7 +15,7 @@ class Grupo:
             self.listadoAlumnos = estudiantes
             self._asignaturas = []
         else:
-           self._asinaturas = asignaturas
+           self._asignaturas = asignaturas
            self.listadoAlumnos = estudiantes
            
 
